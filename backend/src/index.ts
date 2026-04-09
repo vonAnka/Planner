@@ -16,8 +16,8 @@ async function main() {
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   })
 
-  // Works both locally (tsx) and on Railway (compiled)
-  const frontendDist = path.join(process.cwd(), 'frontend', 'dist')
+  // Resolve relative to compiled output (dist/index.js) → project root → frontend/dist
+  const frontendDist = path.join(__dirname, '..', '..', 'frontend', 'dist')
 
   await server.register(staticPlugin, {
     root: frontendDist,
