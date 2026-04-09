@@ -3,6 +3,26 @@ import { useNavigate } from 'react-router-dom'
 import { api } from '../api/client'
 import { Plus, Layers, ArrowRight, Users, CheckSquare, Trash2 } from 'lucide-react'
 
+const RECENT_PROJECTS_KEY = 'recentProjects'
+const RECENT_PROJECTS_LIMIT = 5
+
+interface RecentProject {
+  id: string
+  title: string
+}
+
+export function addToRecent(projectId: string, projectTitle: string): void {
+  try {
+    const stored = localStorage.getItem(RECENT_PROJECTS_KEY)
+    const recent: RecentProject[] = stored ? JSON.parse(stored) : []
+    const filtered = recent.filter(p => p.id !== projectId)
+    const updated = [{ id: projectId, title: projectTitle }, ...filtered].slice(0, RECENT_PROJECTS_LIMIT)
+    localStorage.setItem(RECENT_PROJECTS_KEY, JSON.stringify(updated))
+  } catch {
+    // localStorage may be unavailable in some environments; fail silently
+  }
+}
+
 interface ProjectSummary {
   id: string
   title: string
