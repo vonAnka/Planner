@@ -18,9 +18,11 @@ async function req<T>(method: string, path: string, body?: unknown): Promise<T> 
 
 export const api = {
   // Projects
+  getProjects:   ()                            => req<Array<{id:string;title:string;createdAt:string;updatedAt:string;_count:{members:number;tasks:number}}>>('GET', '/projects'),
   getProject:    (id: string)                => req<Project>('GET',   `/projects/${id}`),
   createProject: (title: string)             => req<Project>('POST',  '/projects', { title }),
   updateProject: (id: string, title: string) => req<Project>('PATCH', `/projects/${id}`, { title }),
+  deleteProject: (id: string)                => req<void>('DELETE', `/projects/${id}`),
 
   // Members
   createMember: (projectId: string, data: { name: string; role?: string; color?: string }) =>
