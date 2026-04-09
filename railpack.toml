@@ -1,0 +1,8 @@
+[config]
+rootDirectory = "."
+
+[build]
+cmd = "cd frontend && npm install && npm run build && cd ../backend && npm install && npx prisma generate && npm run build"
+
+[deploy]
+startCmd = "cd backend && npx prisma db push && cd .. && node backend/dist/index.js"
