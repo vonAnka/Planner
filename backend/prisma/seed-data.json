@@ -1,0 +1,1163 @@
+{
+  "exportedAt": "2026-04-09T13:06:41.636Z",
+  "projects": [
+    {
+      "id": "b8EylvYw",
+      "title": "Freya bracket",
+      "createdAt": "2026-03-27T10:49:13.062Z",
+      "updatedAt": "2026-03-27T10:49:13.062Z"
+    },
+    {
+      "id": "WMdZv8QO",
+      "title": "test",
+      "createdAt": "2026-03-30T08:57:57.846Z",
+      "updatedAt": "2026-03-30T08:57:57.846Z"
+    },
+    {
+      "id": "WPwDbGJi",
+      "title": "test",
+      "createdAt": "2026-04-01T11:08:40.225Z",
+      "updatedAt": "2026-04-01T11:08:40.225Z"
+    },
+    {
+      "id": "aN2LdsqL",
+      "title": "ghyj",
+      "createdAt": "2026-04-01T12:42:11.898Z",
+      "updatedAt": "2026-04-01T12:42:11.898Z"
+    },
+    {
+      "id": "aMw92sbB",
+      "title": "Telemanipulator Demo Camera",
+      "createdAt": "2026-04-07T09:35:21.050Z",
+      "updatedAt": "2026-04-07T09:35:21.050Z"
+    }
+  ],
+  "teamMembers": [
+    {
+      "id": "cmn8s47as0001b3f11yb1ntrj",
+      "projectId": "b8EylvYw",
+      "name": "Andreas",
+      "role": "Allsidig",
+      "color": "#58A6FF",
+      "avatarInitials": "A",
+      "order": 0
+    },
+    {
+      "id": "cmncyglwq0003zebu99jialuo",
+      "projectId": "WMdZv8QO",
+      "name": "A",
+      "role": "",
+      "color": "#58A6FF",
+      "avatarInitials": "A",
+      "order": 0
+    },
+    {
+      "id": "cmnfy0o4h0001ynj8be9hxc6a",
+      "projectId": "WPwDbGJi",
+      "name": "New Member 1",
+      "role": "Designer",
+      "color": "#2563EB",
+      "avatarInitials": "NM",
+      "order": 0
+    },
+    {
+      "id": "cmnofbhzf002jynj8erm8w9d5",
+      "projectId": "aMw92sbB",
+      "name": "Andreas",
+      "role": "Mechanical design",
+      "color": "#2563EB",
+      "avatarInitials": "A",
+      "order": 0
+    },
+    {
+      "id": "cmn8s9bax000db3f18o0xlndp",
+      "projectId": "b8EylvYw",
+      "name": "Adrien",
+      "role": "Salesman",
+      "color": "#3FB950",
+      "avatarInitials": "A",
+      "order": 1
+    },
+    {
+      "id": "cmncyn5pt000lzebufglrpx8w",
+      "projectId": "WMdZv8QO",
+      "name": "C",
+      "role": "",
+      "color": "#3FB950",
+      "avatarInitials": "C",
+      "order": 1
+    },
+    {
+      "id": "cmnfy0yaq0003ynj8wolkyl8k",
+      "projectId": "WPwDbGJi",
+      "name": "New Member 2",
+      "role": "Engineer",
+      "color": "#16A34A",
+      "avatarInitials": "NM",
+      "order": 1
+    },
+    {
+      "id": "cmnofbt2k002lynj811xgn6ys",
+      "projectId": "aMw92sbB",
+      "name": "Albin",
+      "role": "Software",
+      "color": "#16A34A",
+      "avatarInitials": "A",
+      "order": 1
+    },
+    {
+      "id": "cmn9fayu40007ulyxqezgz1fu",
+      "projectId": "b8EylvYw",
+      "name": "Smurfen",
+      "role": "",
+      "color": "#F78166",
+      "avatarInitials": "S",
+      "order": 2
+    },
+    {
+      "id": "cmncynwvz000pzebu5l7it19r",
+      "projectId": "WMdZv8QO",
+      "name": "New Member",
+      "role": "",
+      "color": "#F78166",
+      "avatarInitials": "NM",
+      "order": 2
+    },
+    {
+      "id": "cmnofc1dr002nynj89vr1t4p4",
+      "projectId": "aMw92sbB",
+      "name": "Lars",
+      "role": "Software",
+      "color": "#DC2626",
+      "avatarInitials": "L",
+      "order": 2
+    },
+    {
+      "id": "cmncypald000rzebu39gyvi7w",
+      "projectId": "WMdZv8QO",
+      "name": "Andreas Johansson",
+      "role": "",
+      "color": "#D2A8FF",
+      "avatarInitials": "AJ",
+      "order": 3
+    },
+    {
+      "id": "cmnd0nwjr0001dt70jlp8yb3h",
+      "projectId": "WMdZv8QO",
+      "name": "Olle",
+      "role": "testare",
+      "color": "#FFA657",
+      "avatarInitials": "O",
+      "order": 4
+    },
+    {
+      "id": "cmnofck5g002rynj8iwqsmy4m",
+      "projectId": "aMw92sbB",
+      "name": "Johan",
+      "role": "CEO",
+      "color": "#EA580C",
+      "avatarInitials": "J",
+      "order": 4
+    },
+    {
+      "id": "cmnoff2pr002vynj8xz7dgn2s",
+      "projectId": "aMw92sbB",
+      "name": "Unassigned",
+      "role": "",
+      "color": "#0891B2",
+      "avatarInitials": "U",
+      "order": 5
+    },
+    {
+      "id": "cmnoffvqi002xynj8du42b1cq",
+      "projectId": "aMw92sbB",
+      "name": "Adrien",
+      "role": "Sales",
+      "color": "#65A30D",
+      "avatarInitials": "A",
+      "order": 6
+    },
+    {
+      "id": "cmnog7r1f005tynj8rarguzy2",
+      "projectId": "aMw92sbB",
+      "name": "Jan",
+      "role": "Embedded design",
+      "color": "#DB2777",
+      "avatarInitials": "J",
+      "order": 7
+    }
+  ],
+  "tasks": [
+    {
+      "id": "cmn8s4jxo0003b3f10xndrtwm",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn8s47as0001b3f11yb1ntrj",
+      "title": "Rita ett concept",
+      "description": "",
+      "startTime": 1775433600000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmn8s69p30007b3f1sqeqpudo",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn8s9bax000db3f18o0xlndp",
+      "title": "Hitta en connector",
+      "description": "",
+      "startTime": 1775692800000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmn8s8h84000bb3f1haodumvf",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn8s9bax000db3f18o0xlndp",
+      "title": "Inital task",
+      "description": "",
+      "startTime": 1774742400000,
+      "duration": 1440,
+      "done": true,
+      "laneRow": 0
+    },
+    {
+      "id": "cmn8sb4qv000fb3f1k7v8c20g",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn9fayu40007ulyxqezgz1fu",
+      "title": "Hitta connector",
+      "description": "",
+      "startTime": 1774915200000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmn8sdkqy000nb3f1yf5hbsss",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn8s47as0001b3f11yb1ntrj",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1774915200000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmn8sea63000pb3f1ku45bq7q",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn8s9bax000db3f18o0xlndp",
+      "title": "B",
+      "description": "",
+      "startTime": 1775260800000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmn8serxr000rb3f1yp7a1zbu",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn9fayu40007ulyxqezgz1fu",
+      "title": "sell all cameras to crazy customer",
+      "description": "go sell it on a mountain\n",
+      "startTime": 1775520000000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmn8seux0000tb3f1sfuhbr48",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn8s9bax000db3f18o0xlndp",
+      "title": "D",
+      "description": "",
+      "startTime": 1775001600000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmncyfxh60001zebucccwkirn",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn8s9bax000db3f18o0xlndp",
+      "title": "C",
+      "description": "",
+      "startTime": 1775433600000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmncygs9h0005zebu6sc7m97a",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmncyn5pt000lzebufglrpx8w",
+      "title": "steg1",
+      "description": "",
+      "startTime": 1775001600000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmncygz9a0009zebu2tdet761",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmncyglwq0003zebu99jialuo",
+      "title": "steg 7",
+      "description": "",
+      "startTime": 1775347200000,
+      "duration": 4320,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmncyscxj000vzebuj02ix04b",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmncynwvz000pzebu5l7it19r",
+      "title": "steg3",
+      "description": "",
+      "startTime": 1775088000000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnd01ez700018v9u806xvdcw",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmncynwvz000pzebu5l7it19r",
+      "title": "steg6",
+      "description": "",
+      "startTime": 1775520000000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnd01klz00038v9ujggn9tq0",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmncypald000rzebu39gyvi7w",
+      "title": "steg5",
+      "description": "",
+      "startTime": 1775174400000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnd0o7a10003dt701okkg1pp",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmnd0nwjr0001dt70jlp8yb3h",
+      "title": "steg4",
+      "description": "",
+      "startTime": 1775520000000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnd0okzj0005dt70wrdqv4lo",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmncyn5pt000lzebufglrpx8w",
+      "title": "steg2",
+      "description": "",
+      "startTime": 1775347200000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmndabsxq000111nj8diy55ed",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn8s9bax000db3f18o0xlndp",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1775433600000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnfskodc0003wh9lzza826cp",
+      "projectId": "b8EylvYw",
+      "memberId": "cmn8s47as0001b3f11yb1ntrj",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1775174400000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnfy1w9c0009ynj8pajc2qh0",
+      "projectId": "WPwDbGJi",
+      "memberId": "cmnfy0yaq0003ynj8wolkyl8k",
+      "title": "New Task 1",
+      "description": "adasd",
+      "startTime": 1776470400000,
+      "duration": 2880,
+      "done": true,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnfy21p0000bynj8gc0av9k4",
+      "projectId": "WPwDbGJi",
+      "memberId": "cmnfy0o4h0001ynj8be9hxc6a",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1775347200000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnfy3d5o000nynj8yo3847s8",
+      "projectId": "WPwDbGJi",
+      "memberId": "cmnfy0yaq0003ynj8wolkyl8k",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1776038400000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnfy6nxs0011ynj8dzrlvfmf",
+      "projectId": "WPwDbGJi",
+      "memberId": "cmnfy0o4h0001ynj8be9hxc6a",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1782432000000,
+      "duration": 4320,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnfyorm60013ynj8s56p84kc",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmnd0nwjr0001dt70jlp8yb3h",
+      "title": "Stegosarus",
+      "description": "",
+      "startTime": 1775001600000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnfyrzju001fynj8thv2wzip",
+      "projectId": "WPwDbGJi",
+      "memberId": "cmnfy0yaq0003ynj8wolkyl8k",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1775520000000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnfytzho001jynj8bew67f6e",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmncypald000rzebu39gyvi7w",
+      "title": "A",
+      "description": "",
+      "startTime": 1774915200000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnfyu30o001lynj84kf8k6kn",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmncypald000rzebu39gyvi7w",
+      "title": "B",
+      "description": "",
+      "startTime": 1775260800000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnfyu6jd001nynj89aqo7kxg",
+      "projectId": "WMdZv8QO",
+      "memberId": "cmncypald000rzebu39gyvi7w",
+      "title": "C",
+      "description": "",
+      "startTime": 1775174400000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmng1ft920023ynj843v28msb",
+      "projectId": "WPwDbGJi",
+      "memberId": "cmnfy0o4h0001ynj8be9hxc6a",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1775779200000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmng1hira0029ynj8hfa124bi",
+      "projectId": "WPwDbGJi",
+      "memberId": "cmnfy0o4h0001ynj8be9hxc6a",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1776038400000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmng1ixm9002bynj8rnd9i3jv",
+      "projectId": "WPwDbGJi",
+      "memberId": "cmnfy0yaq0003ynj8wolkyl8k",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1775520000000,
+      "duration": 0,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmng1je11002dynj8u50bvlba",
+      "projectId": "WPwDbGJi",
+      "memberId": "cmnfy0yaq0003ynj8wolkyl8k",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1775692800000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmng1jjj7002fynj8l9wbhp8u",
+      "projectId": "WPwDbGJi",
+      "memberId": "cmnfy0yaq0003ynj8wolkyl8k",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1775692800000,
+      "duration": 480,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofdtj2002tynj8btk0ygrb",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofck5g002rynj8iwqsmy4m",
+      "title": "Define Connectors",
+      "description": "",
+      "startTime": 1775606400000,
+      "duration": 5760,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofg0kg002zynj8boi5tlne",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoffvqi002xynj8du42b1cq",
+      "title": "Get telemanipulator gripper specs",
+      "description": "",
+      "startTime": 1775606400000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofgn5k0031ynj871x746wr",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbhzf002jynj8erm8w9d5",
+      "title": "Design manipulator holder part",
+      "description": "",
+      "startTime": 1776038400000,
+      "duration": 5760,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofi5ks0035ynj8qmn6ymd0",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoff2pr002vynj8xz7dgn2s",
+      "title": "Define Main Unit internal parts",
+      "description": "",
+      "startTime": 1775606400000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofioco0037ynj880y2y7nf",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbhzf002jynj8erm8w9d5",
+      "title": "Create BOM for all materials in Sensor Head",
+      "description": "",
+      "startTime": 1778025600000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnofj7z70039ynj84t54awmi",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoff2pr002vynj8xz7dgn2s",
+      "title": "FInd Coax cable",
+      "description": "",
+      "startTime": 1775779200000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofjh7j003bynj8lhyexguw",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoff2pr002vynj8xz7dgn2s",
+      "title": "Find lens module",
+      "description": "",
+      "startTime": 1775952000000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnofjr8a003dynj824x480yw",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoff2pr002vynj8xz7dgn2s",
+      "title": "Find internal cables",
+      "description": "",
+      "startTime": 1776124800000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofkghm003fynj8kp1ljt49",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbhzf002jynj8erm8w9d5",
+      "title": "Make concept on Main Unit",
+      "description": "",
+      "startTime": 1775779200000,
+      "duration": 7200,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnofl6r9003hynj8whwgkilq",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoff2pr002vynj8xz7dgn2s",
+      "title": "Buy and wait for receiving components",
+      "description": "",
+      "startTime": 1778198400000,
+      "duration": 10080,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofm48m003lynj8sib0rxs4",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoffvqi002xynj8du42b1cq",
+      "title": "Review concept design with customer",
+      "description": "",
+      "startTime": 1776988800000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofneut003tynj8fze0hteg",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbhzf002jynj8erm8w9d5",
+      "title": "Assemble Main Unit",
+      "description": "",
+      "startTime": 1779235200000,
+      "duration": 4320,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnofnlx7003vynj80ite34hf",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbhzf002jynj8erm8w9d5",
+      "title": "Assemble Sensor Unit",
+      "description": "",
+      "startTime": 1779235200000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnofoktn0041ynj8gumyvmwz",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoff2pr002vynj8xz7dgn2s",
+      "title": "Final test",
+      "description": "",
+      "startTime": 1779667200000,
+      "duration": 4320,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofq8u9004bynj86fdvvxnl",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbhzf002jynj8erm8w9d5",
+      "title": "Print parts",
+      "description": "",
+      "startTime": 1778198400000,
+      "duration": 4320,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofrt5h004jynj8wj5nw5pn",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbt2k002lynj811xgn6ys",
+      "title": "Test I2C driver",
+      "description": "",
+      "startTime": 1776124800000,
+      "duration": 7200,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofs5ob004lynj81kkn0c3k",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbt2k002lynj811xgn6ys",
+      "title": "Make Mimer configuration",
+      "description": "",
+      "startTime": 1776643200000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofsoek004nynj8ea1pyf00",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofc1dr002nynj89vr1t4p4",
+      "title": "Get video to work on Phytec module",
+      "description": "",
+      "startTime": 1775606400000,
+      "duration": 7200,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnoftajx004pynj8c8tzou4e",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoff2pr002vynj8xz7dgn2s",
+      "title": "Connect all PCBs and install FW and image file",
+      "description": "",
+      "startTime": 1776816000000,
+      "duration": 5760,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnoftz8h004rynj8utzld2cq",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoff2pr002vynj8xz7dgn2s",
+      "title": "Buy components",
+      "description": "",
+      "startTime": 1776384000000,
+      "duration": 4320,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnofv9ay0053ynj8ykx7fw9m",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbhzf002jynj8erm8w9d5",
+      "title": "Make concept on camera unit",
+      "description": "",
+      "startTime": 1776384000000,
+      "duration": 7200,
+      "done": false,
+      "laneRow": 2
+    },
+    {
+      "id": "cmnofwfgn0055ynj8sqnm0po2",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbhzf002jynj8erm8w9d5",
+      "title": "Design Main Unit",
+      "description": "",
+      "startTime": 1777248000000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnofwnhs0057ynj8kh47ufer",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbhzf002jynj8erm8w9d5",
+      "title": "Design camera Unit",
+      "description": "",
+      "startTime": 1777248000000,
+      "duration": 8640,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnofzgl4005jynj8p0vfh806",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnog7r1f005tynj8rarguzy2",
+      "title": "Order PCBs",
+      "description": "",
+      "startTime": 1775606400000,
+      "duration": 5760,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnog9gkp005xynj8env0uhy6",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoff2pr002vynj8xz7dgn2s",
+      "title": "Make standalone test",
+      "description": "",
+      "startTime": 1777334400000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnogetuf006bynj8u3xy60k1",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoff2pr002vynj8xz7dgn2s",
+      "title": "Design / build packaging material for system",
+      "description": "",
+      "startTime": 1779667200000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 1
+    },
+    {
+      "id": "cmnq4cra4000d1445rdgjzsv6",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnoffvqi002xynj8du42b1cq",
+      "title": "Minor technical alignment with Orano",
+      "description": "",
+      "startTime": 1776729600000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnq6l7qj000p1445cbxa2ywp",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofck5g002rynj8iwqsmy4m",
+      "title": "Review",
+      "description": "",
+      "startTime": 1776124800000,
+      "duration": 1440,
+      "done": false,
+      "laneRow": 0
+    },
+    {
+      "id": "cmnqik80a0001s383ho6u4a4s",
+      "projectId": "aMw92sbB",
+      "memberId": "cmnofbhzf002jynj8erm8w9d5",
+      "title": "New Task",
+      "description": "",
+      "startTime": 1776038400000,
+      "duration": 2880,
+      "done": false,
+      "laneRow": 2
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "cmn8s881m0009b3f1c4hr742b",
+      "fromTaskId": "cmn8s4jxo0003b3f10xndrtwm",
+      "toTaskId": "cmn8s69p30007b3f1sqeqpudo"
+    },
+    {
+      "id": "cmn8sbbz2000hb3f19w9cprj7",
+      "fromTaskId": "cmn8sb4qv000fb3f1k7v8c20g",
+      "toTaskId": "cmn8s4jxo0003b3f10xndrtwm"
+    },
+    {
+      "id": "cmn8sctzo000jb3f18m1aeuuy",
+      "fromTaskId": "cmn8s8h84000bb3f1haodumvf",
+      "toTaskId": "cmn8sb4qv000fb3f1k7v8c20g"
+    },
+    {
+      "id": "cmn8scwp7000lb3f1b7mn2alt",
+      "fromTaskId": "cmn8s8h84000bb3f1haodumvf",
+      "toTaskId": "cmn8s4jxo0003b3f10xndrtwm"
+    },
+    {
+      "id": "cmn8sfqhc000vb3f16gi22u88",
+      "fromTaskId": "cmn8s8h84000bb3f1haodumvf",
+      "toTaskId": "cmn8seux0000tb3f1sfuhbr48"
+    },
+    {
+      "id": "cmn8sh1yp000xb3f1fdglqyzz",
+      "fromTaskId": "cmn8seux0000tb3f1sfuhbr48",
+      "toTaskId": "cmn8s4jxo0003b3f10xndrtwm"
+    },
+    {
+      "id": "cmn8sh93o0011b3f1sejbzzsm",
+      "fromTaskId": "cmn8sdkqy000nb3f1yf5hbsss",
+      "toTaskId": "cmn8s4jxo0003b3f10xndrtwm"
+    },
+    {
+      "id": "cmncynm32000nzebull19bol9",
+      "fromTaskId": "cmncygs9h0005zebu6sc7m97a",
+      "toTaskId": "cmncygz9a0009zebu2tdet761"
+    },
+    {
+      "id": "cmnd0i7510003xstsds2lztsp",
+      "fromTaskId": "cmncyscxj000vzebuj02ix04b",
+      "toTaskId": "cmnd01ez700018v9u806xvdcw"
+    },
+    {
+      "id": "cmnd0i9610005xstsj5zqn9je",
+      "fromTaskId": "cmncyscxj000vzebuj02ix04b",
+      "toTaskId": "cmncygz9a0009zebu2tdet761"
+    },
+    {
+      "id": "cmnd0qxuk0007dt70k2zu3oj6",
+      "fromTaskId": "cmnd01klz00038v9ujggn9tq0",
+      "toTaskId": "cmnd01ez700018v9u806xvdcw"
+    },
+    {
+      "id": "cmnd0r3e90009dt707d5z921g",
+      "fromTaskId": "cmnd01klz00038v9ujggn9tq0",
+      "toTaskId": "cmnd0o7a10003dt701okkg1pp"
+    },
+    {
+      "id": "cmnd8t1qe0001d8mescmriyjh",
+      "fromTaskId": "cmn8s8h84000bb3f1haodumvf",
+      "toTaskId": "cmncyfxh60001zebucccwkirn"
+    },
+    {
+      "id": "cmndacpzs000311njzhob4tbc",
+      "fromTaskId": "cmn8seux0000tb3f1sfuhbr48",
+      "toTaskId": "cmn8serxr000rb3f1yp7a1zbu"
+    },
+    {
+      "id": "cmneovg4d000511njednpyvhw",
+      "fromTaskId": "cmn8sea63000pb3f1ku45bq7q",
+      "toTaskId": "cmn8s69p30007b3f1sqeqpudo"
+    },
+    {
+      "id": "cmnfsj98r0001wh9l0urmppjb",
+      "fromTaskId": "cmndabsxq000111nj8diy55ed",
+      "toTaskId": "cmn8s69p30007b3f1sqeqpudo"
+    },
+    {
+      "id": "cmnfys2mg001hynj89qtli7sr",
+      "fromTaskId": "cmnfy21p0000bynj8gc0av9k4",
+      "toTaskId": "cmnfyrzju001fynj8thv2wzip"
+    },
+    {
+      "id": "cmnfz0afc001rynj8kg0dqptt",
+      "fromTaskId": "cmnfyorm60013ynj8s56p84kc",
+      "toTaskId": "cmnd01klz00038v9ujggn9tq0"
+    },
+    {
+      "id": "cmng1gall0027ynj8mh5ykgo6",
+      "fromTaskId": "cmng1ft920023ynj843v28msb",
+      "toTaskId": "cmnfy3d5o000nynj8yo3847s8"
+    },
+    {
+      "id": "cmnofh1sk0033ynj8exc5xdn7",
+      "fromTaskId": "cmnofg0kg002zynj8boi5tlne",
+      "toTaskId": "cmnofgn5k0031ynj871x746wr"
+    },
+    {
+      "id": "cmnoflfd0003jynj8xecykgk3",
+      "fromTaskId": "cmnofioco0037ynj880y2y7nf",
+      "toTaskId": "cmnofl6r9003hynj8whwgkilq"
+    },
+    {
+      "id": "cmnofmi24003nynj8iafqzu15",
+      "fromTaskId": "cmnofgn5k0031ynj871x746wr",
+      "toTaskId": "cmnofm48m003lynj8sib0rxs4"
+    },
+    {
+      "id": "cmnofmjef003pynj8br30kioz",
+      "fromTaskId": "cmnofkghm003fynj8kp1ljt49",
+      "toTaskId": "cmnofm48m003lynj8sib0rxs4"
+    },
+    {
+      "id": "cmnofobge003xynj8vx1ygaso",
+      "fromTaskId": "cmnofl6r9003hynj8whwgkilq",
+      "toTaskId": "cmnofneut003tynj8fze0hteg"
+    },
+    {
+      "id": "cmnofocz8003zynj84xz6hzmx",
+      "fromTaskId": "cmnofl6r9003hynj8whwgkilq",
+      "toTaskId": "cmnofnlx7003vynj80ite34hf"
+    },
+    {
+      "id": "cmnofovnn0043ynj86twepqed",
+      "fromTaskId": "cmnofnlx7003vynj80ite34hf",
+      "toTaskId": "cmnofoktn0041ynj8gumyvmwz"
+    },
+    {
+      "id": "cmnofox340045ynj860job0s5",
+      "fromTaskId": "cmnofneut003tynj8fze0hteg",
+      "toTaskId": "cmnofoktn0041ynj8gumyvmwz"
+    },
+    {
+      "id": "cmnofpapk0047ynj82jbtrupa",
+      "fromTaskId": "cmnofi5ks0035ynj8qmn6ymd0",
+      "toTaskId": "cmnofkghm003fynj8kp1ljt49"
+    },
+    {
+      "id": "cmnofqjxt004dynj8bcni5xvh",
+      "fromTaskId": "cmnofq8u9004bynj86fdvvxnl",
+      "toTaskId": "cmnofnlx7003vynj80ite34hf"
+    },
+    {
+      "id": "cmnofqkwa004fynj8kc3vi6r5",
+      "fromTaskId": "cmnofq8u9004bynj86fdvvxnl",
+      "toTaskId": "cmnofneut003tynj8fze0hteg"
+    },
+    {
+      "id": "cmnofqxel004hynj86kbqyadd",
+      "fromTaskId": "cmnofioco0037ynj880y2y7nf",
+      "toTaskId": "cmnofq8u9004bynj86fdvvxnl"
+    },
+    {
+      "id": "cmnofu6pd004tynj8wdk84sfo",
+      "fromTaskId": "cmnofj7z70039ynj84t54awmi",
+      "toTaskId": "cmnoftz8h004rynj8utzld2cq"
+    },
+    {
+      "id": "cmnofu7s6004vynj89w6xvvmw",
+      "fromTaskId": "cmnofjh7j003bynj8lhyexguw",
+      "toTaskId": "cmnoftz8h004rynj8utzld2cq"
+    },
+    {
+      "id": "cmnofu8rx004xynj8l9xfy5wv",
+      "fromTaskId": "cmnofjr8a003dynj824x480yw",
+      "toTaskId": "cmnoftz8h004rynj8utzld2cq"
+    },
+    {
+      "id": "cmnofuiox004zynj88z1ej19g",
+      "fromTaskId": "cmnoftz8h004rynj8utzld2cq",
+      "toTaskId": "cmnoftajx004pynj8c8tzou4e"
+    },
+    {
+      "id": "cmnofwvme0059ynj8miugmyxg",
+      "fromTaskId": "cmnofwnhs0057ynj8kh47ufer",
+      "toTaskId": "cmnofioco0037ynj880y2y7nf"
+    },
+    {
+      "id": "cmnofx4or005bynj8p0sqh9he",
+      "fromTaskId": "cmnofm48m003lynj8sib0rxs4",
+      "toTaskId": "cmnofwnhs0057ynj8kh47ufer"
+    },
+    {
+      "id": "cmnofx659005dynj83qmotx0p",
+      "fromTaskId": "cmnofm48m003lynj8sib0rxs4",
+      "toTaskId": "cmnofwfgn0055ynj8sqnm0po2"
+    },
+    {
+      "id": "cmnofxepu005hynj8mkryrnk3",
+      "fromTaskId": "cmnofwfgn0055ynj8sqnm0po2",
+      "toTaskId": "cmnofl6r9003hynj8whwgkilq"
+    },
+    {
+      "id": "cmnog04b1005lynj82upp9hni",
+      "fromTaskId": "cmnofzgl4005jynj8p0vfh806",
+      "toTaskId": "cmnofrt5h004jynj8wj5nw5pn"
+    },
+    {
+      "id": "cmnog2s33005pynj8rc5a4tep",
+      "fromTaskId": "cmnofv9ay0053ynj8ykx7fw9m",
+      "toTaskId": "cmnofm48m003lynj8sib0rxs4"
+    },
+    {
+      "id": "cmnog9qfq005zynj8ubperqtp",
+      "fromTaskId": "cmnoftajx004pynj8c8tzou4e",
+      "toTaskId": "cmnog9gkp005xynj8env0uhy6"
+    },
+    {
+      "id": "cmnogfk52006dynj8z62k7syh",
+      "fromTaskId": "cmnofnlx7003vynj80ite34hf",
+      "toTaskId": "cmnogetuf006bynj8u3xy60k1"
+    },
+    {
+      "id": "cmnogfle7006fynj8x6ewrh76",
+      "fromTaskId": "cmnofneut003tynj8fze0hteg",
+      "toTaskId": "cmnogetuf006bynj8u3xy60k1"
+    },
+    {
+      "id": "cmnq6e7lj000n1445sh48yqjp",
+      "fromTaskId": "cmnofrt5h004jynj8wj5nw5pn",
+      "toTaskId": "cmnofwfgn0055ynj8sqnm0po2"
+    },
+    {
+      "id": "cmnq6lcpi000r1445z9hg6yhj",
+      "fromTaskId": "cmnofdtj2002tynj8btk0ygrb",
+      "toTaskId": "cmnq6l7qj000p1445cbxa2ywp"
+    },
+    {
+      "id": "cmnq6ljq7000t1445rwcr17dk",
+      "fromTaskId": "cmnq6l7qj000p1445cbxa2ywp",
+      "toTaskId": "cmnofv9ay0053ynj8ykx7fw9m"
+    },
+    {
+      "id": "cmnq6lkv1000v1445fjcqa5bp",
+      "fromTaskId": "cmnq6l7qj000p1445cbxa2ywp",
+      "toTaskId": "cmnoftz8h004rynj8utzld2cq"
+    }
+  ],
+  "gates": [
+    {
+      "id": "cmnq6qvl3000z1445k7inzq4x",
+      "projectId": "aMw92sbB",
+      "position": 1776124800000,
+      "label": "Spinrt 1 delivery",
+      "description": "",
+      "color": "#9333EA"
+    },
+    {
+      "id": "cmng1f23o001zynj8tleyx40w",
+      "projectId": "WPwDbGJi",
+      "position": 1776211200000,
+      "label": "Milestone",
+      "description": "",
+      "color": "#2563EB"
+    },
+    {
+      "id": "cmnq4jqvh000l1445s1membcv",
+      "projectId": "aMw92sbB",
+      "position": 1776729600000,
+      "label": "Minor technical alignment with Orano",
+      "description": "",
+      "color": "#16A34A"
+    },
+    {
+      "id": "cmnq6s1bx00111445nbxaw5m3",
+      "projectId": "aMw92sbB",
+      "position": 1777420800000,
+      "label": "Milestone",
+      "description": "",
+      "color": "#DB2777"
+    },
+    {
+      "id": "cmnog0x6d005nynj8gecdpz2q",
+      "projectId": "aMw92sbB",
+      "position": 1779408000000,
+      "label": "Test camera final design",
+      "description": "",
+      "color": "#D97706"
+    },
+    {
+      "id": "cmnq4jap7000j1445j0iryg5n",
+      "projectId": "aMw92sbB",
+      "position": 1780012800000,
+      "label": "Test setup delivery to Orano for Vitrification test",
+      "description": "",
+      "color": "#2563EB"
+    },
+    {
+      "id": "cmnq4hooy000h1445jceahzot",
+      "projectId": "aMw92sbB",
+      "position": 1784246400000,
+      "label": "Test camera manufacturing",
+      "description": "",
+      "color": "#DC2626"
+    }
+  ]
+}
