@@ -1,5 +1,5 @@
 import { Resolution } from '../types'
-import { HolidaySet, workdayEndTime, snapToNextWorkday, DAY_MS, midnightUTC, isWorkday } from './workdays'
+import { HolidaySet, workdayEndTime, snapToNextWorkday, DAY_MS, midnightUTC, isWorkday, getWorkdaysBetween } from './workdays'
 
 export const RESOLUTION_CONFIG: Record<Resolution, { unitMs: number; pixelsPerUnit: number; label: string; tickFormat: (d: Date) => string }> = {
   hour: {
@@ -42,7 +42,6 @@ export function pixelsToMs(px: number, resolution: Resolution): number {
 export function snapToGrid(ms: number, resolution: Resolution, holidays?: HolidaySet): number {
   const { unitMs } = RESOLUTION_CONFIG[resolution]
   const snapped = Math.round(ms / unitMs) * unitMs
-  // In day/week mode snap to next workday if on a weekend/holiday
   if ((resolution === 'day' || resolution === 'week') && holidays) {
     return snapToNextWorkday(snapped, holidays)
   }
@@ -75,8 +74,8 @@ export function generateTicks(gridStart: number, gridWidth: number, resolution: 
 }
 
 /**
- * Task visual geometry — in day/week mode the right edge is computed
- * by counting workdays so weekends are skipped visually.
+ * Task geometry for bounding box (drag/ghost/hit detection).
+ * In day/week mode width spans from start to workday end (skipping weekends visually).
  */
 export function taskGeometry(
   startTime: number,
@@ -89,29 +88,31 @@ export function taskGeometry(
   let width: number
 
   if ((resolution === 'day' || resolution === 'week') && holidays) {
-    const durationDays = duration / (24 * 60)
+    const durationDays = Math.max(1, Math.round(duration / (24 * 60)))
     const endMs = workdayEndTime(startTime, durationDays, holidays)
-    width = Math.max(msToPixels(RESOLUTION_CONFIG[resolution].unitMs, resolution), msToPixels(endMs - startTime, resolution))
-    // Clamp width: walk day by day and sum only workday pixels
-    let w = 0
-    let d = midnightUTC(startTime)
-    let workdaysLeft = durationDays
-    while (workdaysLeft > 0) {
-      if (isWorkday(d, holidays)) {
-        w += msToPixels(DAY_MS, resolution)
-        workdaysLeft--
-      } else {
-        // Weekend/holiday: still advance the pixel position
-        w += msToPixels(DAY_MS, resolution)
-      }
-      d += DAY_MS
-    }
-    width = Math.max(msToPixels(RESOLUTION_CONFIG[resolution].unitMs, resolution), w)
+    width = Math.max(msToPixels(DAY_MS, resolution), msToPixels(endMs - startTime, resolution))
   } else {
     width = Math.max(24, msToPixels(duration * 60 * 1000, resolution))
   }
 
   return { left, width }
+}
+
+/**
+ * Given a resize drag end position in pixels, compute new duration in minutes
+ * as whole workdays × 1440 min.
+ */
+export function resizeEndToWorkdayDuration(
+  startTime: number,
+  endPx: number,
+  gridStart: number,
+  resolution: Resolution,
+  holidays: HolidaySet,
+): number {
+  const rawEndMs = gridStart + pixelsToMs(endPx, resolution)
+  const snappedEnd = snapToNextWorkday(rawEndMs + DAY_MS, holidays)
+  const workdays = Math.max(1, getWorkdaysBetween(startTime, snappedEnd, holidays))
+  return workdays * 24 * 60
 }
 
 export function pixelToTime(px: number, gridStart: number, resolution: Resolution): number {
@@ -122,7 +123,6 @@ export function formatDate(ms: number, resolution: Resolution): string {
   return RESOLUTION_CONFIG[resolution].tickFormat(new Date(ms))
 }
 
-/** Get week number and whether it's odd/even — used for zebra striping */
 export function getWeekParity(ms: number): { week: number; odd: boolean } {
   const week = getWeekNumber(new Date(ms))
   return { week, odd: week % 2 === 1 }

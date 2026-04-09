@@ -1,7 +1,7 @@
 import { useEffect, useRef, useCallback, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../../store/projectStore'
-import { pixelsToMs, snapToGrid, getGridWidth, msToPixels } from '../../utils/time'
+import { pixelsToMs, snapToGrid, getGridWidth, msToPixels, resizeEndToWorkdayDuration } from '../../utils/time'
 import { MEMBER_COLUMN_WIDTH, HEADER_HEIGHT, swimlaneHeight } from '../../utils/layout'
 import TimeGridHeader from './TimeGridHeader'
 import Swimlane from './Swimlane'
@@ -16,9 +16,9 @@ import { Layers, Clock, Calendar, CalendarDays, Link, Check, Plus, ChevronLeft }
 export default function PlannerShell() {
   const {
     project, resolution, gridStart, drag, resize, depDrawing,
-    panel, contextMenu,
+    panel, contextMenu, holidays,
     setResolution, updateDrag, commitDrag, cancelDrag,
-    commitResize, cancelResize, updateDepMouse, connectDep, cancelDepDrawing,
+    commitResize, cancelResize, updateDepMouse, cancelDepDrawing,
     hideContextMenu, showContextMenu, addTask, addGate, addMember, openPanel,
   } = useStore()
 
@@ -81,13 +81,12 @@ export default function PlannerShell() {
     const scrollRect = scrollEl.getBoundingClientRect()
     const gridX = e.clientX - scrollRect.left - MEMBER_COLUMN_WIDTH + scrollEl.scrollLeft
     const rawMs = gridStart + pixelsToMs(gridX, resolution) - drag.offsetMs
-    const snapped = snapToGrid(rawMs, resolution)
+    const snapped = snapToGrid(rawMs, resolution, holidays)
 
     const el = document.elementFromPoint(e.clientX, e.clientY)
     const swimlaneEl = el?.closest('[data-member-id]')
     const ghostMemberId = swimlaneEl?.getAttribute('data-member-id') ?? drag.ghostMemberId
 
-    // Mouse Y relative to top of target swimlane
     const mouseYInContent = e.clientY - scrollRect.top + scrollEl.scrollTop - HEADER_HEIGHT
     let cumulativeY = 0
     let mouseYInSwimlane = 0
@@ -102,20 +101,31 @@ export default function PlannerShell() {
     }
 
     updateDrag(snapped, ghostMemberId, mouseYInSwimlane)
-  }, [drag, gridStart, resolution, project])
+  }, [drag, gridStart, resolution, project, holidays])
 
   const handleResizeMove = useCallback((e: MouseEvent) => {
     if (!resize) return
-    const { taskId, originalDuration, startX } = resize
-    const deltaX = e.clientX - startX
-    const deltaMs = pixelsToMs(deltaX, resolution)
-    const deltaMin = deltaMs / 60000
-    const minDuration = resolution === 'hour' ? 30 : resolution === 'day' ? 60 : 240
-    const rawDuration = Math.max(minDuration, originalDuration + deltaMin)
-    const unitMin = resolution === 'hour' ? 60 : resolution === 'day' ? 60 * 24 : 60 * 24 * 7
-    const snappedDuration = Math.round(rawDuration / unitMin) * unitMin
-    const { project: proj } = useStore.getState()
-    if (proj) {
+    const { taskId, startX, originalDuration } = resize
+    const { project: proj, resolution: res, gridStart: gs, holidays: hols } = useStore.getState()
+    if (!proj) return
+    const task = proj.tasks.find(t => t.id === taskId)
+    if (!task) return
+
+    if (res === 'day' || res === 'week') {
+      const scrollEl = gridScrollRef.current
+      const scrollLeft = scrollEl?.scrollLeft ?? 0
+      const scrollRect = scrollEl?.getBoundingClientRect()
+      const currentRightPx = (scrollRect ? e.clientX - scrollRect.left : e.clientX) + scrollLeft - MEMBER_COLUMN_WIDTH
+      const newDuration = resizeEndToWorkdayDuration(task.startTime, currentRightPx, gs, res, hols)
+      const updatedTasks = proj.tasks.map(t => t.id === taskId ? { ...t, duration: newDuration } : t)
+      useStore.setState({ project: { ...proj, tasks: updatedTasks } })
+    } else {
+      // Hour mode — pixel-based resize
+      const deltaX = e.clientX - startX
+      const deltaMs = pixelsToMs(deltaX, res)
+      const deltaMin = deltaMs / 60000
+      const rawDuration = Math.max(30, originalDuration + deltaMin)
+      const snappedDuration = Math.round(rawDuration / 60) * 60
       const updatedTasks = proj.tasks.map(t => t.id === taskId ? { ...t, duration: snappedDuration } : t)
       useStore.setState({ project: { ...proj, tasks: updatedTasks } })
     }
@@ -135,9 +145,9 @@ export default function PlannerShell() {
     if (!scrollEl) return
     const scrollRect = scrollEl.getBoundingClientRect()
     const gridX = e.clientX - scrollRect.left - MEMBER_COLUMN_WIDTH + scrollEl.scrollLeft
-    const time = snapToGrid(gridStart + pixelsToMs(gridX, resolution), resolution)
+    const time = snapToGrid(gridStart + pixelsToMs(gridX, resolution), resolution, holidays)
     showContextMenu({ x: e.clientX, y: e.clientY, type: 'grid', time, memberId })
-  }, [gridStart, resolution])
+  }, [gridStart, resolution, holidays])
 
   const handleGridClick = useCallback(() => {
     if (depDrawing) cancelDepDrawing()
