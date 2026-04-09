@@ -1,0 +1,75 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id        String       @id
+  title     String
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  members   TeamMember[]
+  tasks     Task[]
+  gates     Gate[]
+}
+
+model TeamMember {
+  id             String   @id @default(cuid())
+  projectId      String
+  project        Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  name           String
+  role           String   @default("")
+  color          String   @default("#4F6EF7")
+  avatarInitials String
+  order          Int      @default(0)
+  tasks          Task[]
+
+  @@index([projectId])
+}
+
+model Task {
+  id          String       @id @default(cuid())
+  projectId   String
+  project     Project      @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  memberId    String
+  member      TeamMember   @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  title       String
+  description String       @default("")
+  startTime   Float
+  duration    Float
+  done        Boolean      @default(false)
+  laneRow     Int          @default(0)
+  parents     Dependency[] @relation("ChildTask")
+  children    Dependency[] @relation("ParentTask")
+
+  @@index([projectId])
+  @@index([memberId])
+}
+
+model Dependency {
+  id         String @id @default(cuid())
+  fromTaskId String
+  toTaskId   String
+  fromTask   Task   @relation("ParentTask", fields: [fromTaskId], references: [id], onDelete: Cascade)
+  toTask     Task   @relation("ChildTask", fields: [toTaskId], references: [id], onDelete: Cascade)
+
+  @@unique([fromTaskId, toTaskId])
+  @@index([fromTaskId])
+  @@index([toTaskId])
+}
+
+model Gate {
+  id          String  @id @default(cuid())
+  projectId   String
+  project     Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  position    Float
+  label       String
+  description String  @default("")
+  color       String  @default("#F59E0B")
+
+  @@index([projectId])
+}
