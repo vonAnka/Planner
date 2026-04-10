@@ -2,7 +2,7 @@ import { useCallback } from 'react'
 import { Task } from '../../types'
 import { useStore } from '../../store/projectStore'
 import { msToPixels, pixelsToMs, taskGeometry, resizeEndToWorkdayDuration } from '../../utils/time'
-import { ROW_HEIGHT, SWIMLANE_PADDING, MEMBER_COLUMN_WIDTH } from '../../utils/layout'
+import { ROW_HEIGHT, SWIMLANE_PADDING } from '../../utils/layout'
 import { buildTaskSegments } from '../../utils/workdays'
 import { CheckCircle2, GripVertical } from 'lucide-react'
 import clsx from 'clsx'
@@ -27,7 +27,7 @@ export default function TaskBox({ task, row }: Props) {
   const top = SWIMLANE_PADDING + row * ROW_HEIGHT + 4
   const height = ROW_HEIGHT - 8
 
-  // Bounding box for hit detection and resize handle placement
+  // Bounding box for hit detection
   const { left, width } = taskGeometry(
     task.startTime, task.duration, gridStart, resolution,
     useWorkdays ? holidays : undefined
@@ -42,6 +42,18 @@ export default function TaskBox({ task, row }: Props) {
         gridStart,
       )
     : null
+
+  // Right edge of the last workday segment — this is where the resize handle sits
+  const lastWorkdaySegment = segments
+    ? [...segments].reverse().find(s => !s.isGap)
+    : null
+
+  const resizeHandleLeft = lastWorkdaySegment
+    ? msToPixels(lastWorkdaySegment.leftMs, resolution)
+      + msToPixels(lastWorkdaySegment.widthMs, resolution)
+      - msToPixels(task.startTime - gridStart, resolution)
+      - 16  // handle width
+    : width - 16
 
   const onMouseDown = useCallback((e: React.MouseEvent) => {
     if (e.button !== 0) return
@@ -110,7 +122,8 @@ export default function TaskBox({ task, row }: Props) {
       {segments ? (
         <>
           {segments.map((seg, i) => {
-            const segLeft = msToPixels(seg.leftMs, resolution) - msToPixels(task.startTime - gridStart, resolution)
+            const segLeft = msToPixels(seg.leftMs, resolution)
+              - msToPixels(task.startTime - gridStart, resolution)
             const segWidth = msToPixels(seg.widthMs, resolution)
 
             if (seg.isGap) {
@@ -155,12 +168,10 @@ export default function TaskBox({ task, row }: Props) {
                   borderRight: !isLast  ? 'none' : undefined,
                   backdropFilter: 'blur(4px)',
                 }}>
-                {/* Left accent on first segment only */}
                 {isFirst && (
                   <div className="absolute left-0 top-1 bottom-1 w-0.5 rounded-full"
                     style={{ background: color }} />
                 )}
-                {/* Title on first segment only */}
                 {isFirst && (
                   <span className={clsx(
                     'text-xs font-medium truncate pointer-events-none',
@@ -177,7 +188,6 @@ export default function TaskBox({ task, row }: Props) {
           })}
         </>
       ) : (
-        /* Hour mode — single bar */
         <div className="absolute top-0 left-0 flex items-center overflow-hidden"
           style={{
             width, height,
@@ -200,9 +210,10 @@ export default function TaskBox({ task, row }: Props) {
         </div>
       )}
 
-      {/* Resize handle — on bounding box right edge */}
+      {/* Resize handle — always on last workday segment's right edge */}
       <div
-        className="absolute right-0 top-0 bottom-0 w-4 flex items-center justify-center cursor-col-resize opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/10 rounded-r-md z-10"
+        className="absolute top-0 bottom-0 w-4 flex items-center justify-center cursor-col-resize opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/10 rounded-r-md z-10"
+        style={{ left: resizeHandleLeft }}
         onMouseDown={onResizeMouseDown}
       >
         <GripVertical size={10} className="text-text-muted" />
